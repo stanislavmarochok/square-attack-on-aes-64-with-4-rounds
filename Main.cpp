@@ -13,6 +13,7 @@
 #include <math.h>
 #include <string.h>
 #include <cstdint>
+#include <ctime>
 
 const int rounds = 4; // old 10
 const int numexperiments = 100;
@@ -324,6 +325,8 @@ int main(int argc, const char* argv[]) {
     // round 3 key: 0xc4bc470e63653271
     // round 4 key: 0x787f3f715c146e65
 
+    clock_t beginTime = clock();
+
     uint64_t round4Key = guessKey();
     uint64_t round3Key = inverseKeyExpansion(round4Key, 3);
     uint64_t round2Key = inverseKeyExpansion(round3Key, 2);
@@ -331,6 +334,9 @@ int main(int argc, const char* argv[]) {
     uint64_t crackedMasterKey = inverseKeyExpansion(round1Key, 0);
 
     printf("Cracked key: 0x%16llx\n", crackedMasterKey);
+
+    double time = (clock() - beginTime) / (double)CLOCKS_PER_SEC;
+    printf("Time taken: %f\n", time);
 
     return 0;
 }

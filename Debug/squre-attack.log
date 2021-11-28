@@ -1,4 +1,4 @@
 ﻿  Main.cpp
-D:\Other\Study\Ing\3 semester\I-NKS\zadanie-08\squre-attack\Main.cpp(277,28): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint16_t', possible loss of data
 D:\Other\Study\Ing\3 semester\I-NKS\zadanie-08\squre-attack\Main.cpp(278,28): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint16_t', possible loss of data
+D:\Other\Study\Ing\3 semester\I-NKS\zadanie-08\squre-attack\Main.cpp(279,28): warning C4244: 'initializing': conversion from 'uint64_t' to 'uint16_t', possible loss of data
   squre-attack.vcxproj -> D:\Other\Study\Ing\3 semester\I-NKS\zadanie-08\squre-attack\Debug\squre-attack.exe
